@@ -2,5 +2,19 @@ body{
     margin: 0;
 }
 nav{
+    margin-left: 25%;
+    margin-right: 25%;
     display: flex;
+    justify-content: space-between;
+    border: solid black 1px;
+    align-items: center;
+    position: fixed;
+}
+.navContent{
+    margin-left: 100px;
+}
+#navLogo{
+    margin-left: 0px;
+    height: 100px;
+    width: auto;
 }
