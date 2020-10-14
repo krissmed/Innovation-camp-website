@@ -1,22 +1,27 @@
 body{
     margin: 0;
-    overflow: hidden;
+    background-color: cornsilk;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    border: solid black 1px;
     align-items: center;
     background-color: azure;
     position: fixed;
     width: 100%;
-    opacity: 75%;
-    z-index: 99;
+    z-index: 0;
 }
 .navContent{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     font-size: 2em;
+    text-decoration: none;
+    color: rgb(14, 19, 115);
+}
+.navContent:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 #navLogo{
     margin-left: 25px;
@@ -29,15 +34,53 @@ nav{
 #frontImage{
     max-height: auto;
     max-width: 100%;
-    position: absolute;
     overflow: hidden;
+    z-index: -1;
+    margin-top: 8%;
 }
-#slogan{
-    font-size: 4em;
-    z-index: 1;
-    position: absolute;
-    direction: rtl;
-    left:70%;
-    top:25%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#content{
+    margin: 0 10% 0 10%;
+    z-index: 0;
+}
+.text{
+    font-size: 1.8em;
+}
+.border{
+    padding-bottom: 50px;
+    border-bottom: solid black 2px;
+}
+.headLine{
+    font-size: 3em;
+    text-decoration: underline;
+}
+.img{
+    height: 200px;
+    margin-right: 200px;
+    width: auto;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.resizeImg{
+    height: 200px;
+    width: auto;
+}
+#toTop{ 
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 75%;
+}
+#toTop:hover{
+    background-color: #660000;
+    opacity: 100%;
 }

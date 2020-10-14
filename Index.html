@@ -6,15 +6,78 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div id="toTop" onclick="moveToTop()">Til toppen</div>
     <nav>
         <img class="navContent" id="navLogo" alt="logo" src="Images/Logo.png">
-        <a class="navContent">Home</a>
-        <a href="AboutUs.html" class="navContent">About Us</a>
-        <h1 class="navContent">Support Us</h1>
-        <h1 class="navContent">News</h1>
-        <h1 id="contact" class="navContent">Get in contact</h1>
+        <a href="" class="navContent">Hjem</a>
+        <a href="#theProblem" class="navContent">Problemet</a>
+        <a href="#theSolution" class="navContent">Vår løsning</a>
+        <a href="" class="navContent">Støtt oss</a>
+        <a href="" id="contact" class="navContent">Kontakt oss</a>
     </nav>
-    <img id="frontImage" src="Images/FrontImage.jpg">
-    <p id="slogan">Take action</p>
+    <img src="Images/FrontImage.jpg" id="frontImage">
+    <div id="content" >
+        <h1 class="headLine">GI BARN LIVSVIKTIG SKOLEGANG</h1>
+        <p class="border text">"Utdanning er både en rettighet i seg selv, og nødvendig 
+        for å nå de andre bærekraftsmålene. For eksempel er det færre
+        som utsettes for barnearbeid, og færre som blir utnyttet av voksne,
+        når de får en utdanning. På skolen lærer barna om rettighetene sine,
+        og møter voksne de kan snakke med hvis de opplever vonde ting."
+        <br>
+        - FN
+        </p>
+        <h1 id="theProblem" class="headLine">Problemet</h1>
+            <p class="text">Landene sør for Sahara har de høyeste ratene for skolefravær. 
+            I følge UIS og UNESCO er ca. 60% av barn mellom 
+            12-17 år utenfor skolen. Dette tilsvarer nærmest 100 millioner barn, 
+            1/3 av alle i hele verden.</p>
+            <img src="Images/Image1.png">
+            <p class="text">Det er mange ulike faktorer til hvorfor ungdommen 
+            sør for Sahara dropper ut, og mange av dem henger 
+            sammen. Fattigdom, mangelen på infrastruktur og 
+            kvalitet på skolen er sentrale problemer. Som følge 
+            av dette føler mange seg tvunget til å droppe ut av 
+            skolen. Flere familier holder ungdommene hjemme for å 
+            gjøre arbeid eller passe familien, men trenger det å 
+            være slik?</p>
+            <img src="Images/Image2.png">
+            <h1 id="theSolution" class="headLine">Vår løsning</h1>
+            <p class="border text">Registrering av oppmøte er svært viktig for
+            å holde styr på fraværet til elevene. Når fraværet skal føres 
+            får skolene en mal som inneholder fraværstimer, årsker osv. 
+            Fraværspapirene samles opp og sendes til et hovudkontor. Her 
+            blir dataen digitalisert og analysert. Analysen blir deretter 
+            brukt til å kartlegge hvordan og hvem som skal bli belønnet! 
+            Den kan også brukes til å identifisere problem på skolene ved 
+            å se på fraværsårsakene. Belønningen vil gå til skolene med 
+            minst fravær. For å unngå store skiller vil skolene bli delt 
+            opp i ulike «nivåer» i forhold til hvor de ligger an fra 
+            tidligere. Tidligere belønnet skoler vil hjelpe andre skoler 
+            som sliter, ved besøk og motivasjon. Belønningene blir laget 
+            ut ifra hva behovene er, om det er vann, elektrisitet, automatisering 
+            av jordbruk etc.</p>
+            <h1 class="headLine">Støtt vårt arbeid</h1>
+            <img class="img" src="Images/Vipps.png">
+            <img class="img" src="Images/PayPal.png">
+            <div class="border"></div>
+            <footer>
+                <h1 class="headLine">Kontakt Oss</h1>
+                <div class="footer">
+                <img class="resizeImg" src="Images/Facebook.png">
+                <img class="resizeImg" src="Images/Instagram.png">
+                <img class="resizeImg" src="Images/Twitter.png">
+             </div>
+             <div class="footer">
+             <p class="headLine">Epost: 123@gmail.com</p>
+             <p class="headLine">Telefon: 12345678</p>
+            </div>
+            </footer>
+    </div>  
 </body>
+<script>
+    // To make it easier to move to the top of the page
+    function moveToTop(){
+        window.scrollTo(0,0);
+        }
+</script>
 </html>
